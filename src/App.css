@@ -1,5 +1,17 @@
 .App {
 }
 
+.Header {
+    font-size: 24pt;
+}
+
 .TodoList {
+}
+
+.row {
+    display: flex;
+}
+
+.col {
+    flex: 50%;
 }
