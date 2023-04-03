@@ -2,7 +2,7 @@ import { Typography } from "@mui/material";
 
 function Header() {
     return (
-        <header className="Header">
+        <header>
             <Typography variant="h1" align="center" mt={8}>
                 Todo!
             </Typography>

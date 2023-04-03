@@ -12,7 +12,7 @@ function ListControl({ handleClick, handleChange, handleKeyDown, textValue }) {
 
     return (
         <Grid container spacing={2} alignItems="center" sx={{ my: 4 }}>
-            <Grid xs={12} sm={12} md={10} pl={6} pr={{ sm: 6, md: 0 }}>
+            <Grid xs={12} sm={12} md={10} pl={6} pr={{ xs: 6, sm: 6, md: 0 }}>
                 <TextField
                     id="outlined-start-adornment"
                     type="text"
