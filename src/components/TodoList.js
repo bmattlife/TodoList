@@ -1,16 +1,12 @@
 import { useState } from "react";
-import { createTheme, styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
-import Paper from "@mui/material/Paper";
 import ListView from "./ListView";
 import ListControl from "./ListControl";
-import Grid from "@mui/material/Unstable_Grid2";
-import { ThemeProvider } from "@emotion/react";
-import CssBaseline from "@mui/material/CssBaseline";
+import { useLocalStorage } from "../util";
 
 function TodoList() {
     const [textValue, setTextValue] = useState("");
-    const [listItems, setListItems] = useState([]);
+    const [listItems, setListItems] = useLocalStorage("listItems", []);
 
     function handleChange(event) {
         setTextValue(event.target.value);
