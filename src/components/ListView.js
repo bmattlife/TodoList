@@ -9,7 +9,7 @@ function ListView({ list, handleRemove }) {
             <Grid xs={0} sm={0} md={3}></Grid>
             <Grid xs={12} sm={12} md={6} px={{ xs: 3, sm: 6, md: 0 }}>
                 {list.length === 0 ? (
-                    <Typography pl={6} align="center">
+                    <Typography align="center">
                         Add an item to get started!
                     </Typography>
                 ) : (
