@@ -38,7 +38,6 @@ function ListControl({ handleClick, handleChange, handleKeyDown, textValue }) {
                     size="large"
                     onClick={handleButtonClick}
                     sx={{
-                        mr: 7,
                         width: "75%",
                     }}
                 >
