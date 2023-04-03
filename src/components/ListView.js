@@ -7,9 +7,9 @@ import {
 } from "@mui/material";
 import { Delete as DeleteIcon } from "@mui/icons-material";
 
-function ListItem({ text, key, onRemove }) {
+function ListItem({ text, onRemove }) {
     return (
-        <MuiListItem key={key}>
+        <MuiListItem>
             <IconButton onClick={onRemove}>
                 <DeleteIcon />
             </IconButton>
