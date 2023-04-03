@@ -1,40 +1,25 @@
-import {
-    IconButton,
-    List,
-    ListItem as MuiListItem,
-    ListItemText,
-    Typography,
-} from "@mui/material";
-import { Delete as DeleteIcon } from "@mui/icons-material";
+import { List, Typography, Box } from "@mui/material";
 
-function ListItem({ text, onRemove }) {
-    return (
-        <MuiListItem>
-            <IconButton onClick={onRemove}>
-                <DeleteIcon />
-            </IconButton>
-            <ListItemText primary={text} />
-        </MuiListItem>
-    );
-}
+import TodoListItem from "./TodoListItem";
 
 function ListView({ list, handleRemove }) {
     return (
-        <>
+        <Box>
             {list.length === 0 ? (
                 <Typography pl={6}>Add an item to get started!</Typography>
             ) : (
                 <List dense>
                     {list.map((item, idx) => (
-                        <ListItem
+                        <TodoListItem
                             text={item}
                             key={idx}
+                            idx={idx}
                             onRemove={() => handleRemove(idx)}
                         />
                     ))}
                 </List>
             )}
-        </>
+        </Box>
     );
 }
 
